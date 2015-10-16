@@ -1,0 +1,99 @@
+{
+    "id": "1249e9e5-236d-472f-79f1-5f239496f6a0",
+    "name": "驾校理论挂机",
+    "timestamp": 1444805111521,
+    "requests": [
+        {
+            "collectionId": "1249e9e5-236d-472f-79f1-5f239496f6a0",
+            "id": "0f21963b-b383-1d9e-1f47-e2a85cca5927",
+            "name": "登录",
+            "description": "",
+            "url": "http://www.jppt.com.cn/gzpt/index/login",
+            "method": "POST",
+            "headers": "",
+            "data": [
+                {
+                    "key": "loginType",
+                    "value": "1",
+                    "type": "text"
+                },
+                {
+                    "key": "sfzmhm",
+                    "value": "440604197809283917",
+                    "type": "text"
+                },
+                {
+                    "key": "password",
+                    "value": "123456",
+                    "type": "text"
+                }
+            ],
+            "dataMode": "params",
+            "timestamp": 0,
+            "responses": [],
+            "version": 2
+        },
+        {
+            "collectionId": "1249e9e5-236d-472f-79f1-5f239496f6a0",
+            "id": "24c9cbc0-169e-23f2-a435-16a91fcb3176",
+            "name": "本次培训时间",
+            "description": "",
+            "url": "http://www.jppt.com.cn/gzpt/train/calculateOnLoad",
+            "method": "POST",
+            "headers": "",
+            "data": [],
+            "dataMode": "params",
+            "timestamp": 0,
+            "responses": [],
+            "version": 2
+        },
+        {
+            "collectionId": "1249e9e5-236d-472f-79f1-5f239496f6a0",
+            "id": "6863fa11-3605-d8f2-72d8-a47f882a2b4d",
+            "name": "开始挂机",
+            "description": "",
+            "url": "http://www.jppt.com.cn/gzpt/train/startTrain",
+            "method": "POST",
+            "headers": "",
+            "data": [],
+            "dataMode": "params",
+            "timestamp": 0,
+            "responses": [],
+            "version": 2
+        },
+        {
+            "collectionId": "1249e9e5-236d-472f-79f1-5f239496f6a0",
+            "id": "8c47d407-2b99-cc13-ee28-7d54139d7df1",
+            "name": "退出登录",
+            "description": "",
+            "url": "http://www.jppt.com.cn/gzpt/train/logOut",
+            "method": "POST",
+            "headers": "",
+            "data": [],
+            "dataMode": "params",
+            "timestamp": 0,
+            "responses": [],
+            "version": 2
+        },
+        {
+            "collectionId": "1249e9e5-236d-472f-79f1-5f239496f6a0",
+            "id": "ce8c1411-7e21-3db3-979d-246f2b6820b6",
+            "name": "保存进度",
+            "description": "",
+            "url": "http://www.jppt.com.cn/gzpt/train/autoSave",
+            "method": "POST",
+            "headers": "",
+            "data": [
+                {
+                    "key": "isTotalFirstMsg",
+                    "value": "true",
+                    "type": "text"
+                }
+            ],
+            "dataMode": "params",
+            "timestamp": 0,
+            "responses": [],
+            "version": 2
+        }
+    ]
+}
