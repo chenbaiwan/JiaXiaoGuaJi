@@ -10,13 +10,13 @@ password = ''
 
 def restart():
     count = 0
-    logout = s.post("http://www.jppt.com.cn/gzpt/train/logOut")
+    logout = s.post("http://www.jppt.com.cn/gzpt/admin/train/logOut")
     print logout.text
     
     login = s.post("http://www.jppt.com.cn/gzpt/index/login", {'loginType':'1', 'sfzmhm':id_number, 'password':password})
     print login.text
     
-    startTrain = s.post('http://www.jppt.com.cn/gzpt/train/startTrain')
+    startTrain = s.post('http://www.jppt.com.cn/gzpt/admin/train/startTrain')
     print startTrain.text
     print u'开始挂机'
     
@@ -29,10 +29,10 @@ def restart():
             break;
 
 def guaji():
-    calculateOnLoad = s.post('http://www.jppt.com.cn/gzpt/train/calculateOnLoad')
+    calculateOnLoad = s.post('http://www.jppt.com.cn/gzpt/admin/train/calculateOnLoad')
     print calculateOnLoad.text
 
-    autoSave = s.post('http://www.jppt.com.cn/gzpt/train/autoSave')
+    autoSave = s.post('http://www.jppt.com.cn/gzpt/admin/train/autoSave')
     print autoSave.text
     print u'存个档压压惊'
 
